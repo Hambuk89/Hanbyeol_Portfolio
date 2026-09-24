@@ -5,19 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="mediaqueries.css">
     <title>Han's Portfolio</title>
 </head>
 <body>
-    <div class="navbar">
-        <h2>H.Y</h2>
-        <ul>
-            <li><a href="#">BIO</a></li>
-            <li><a href="#">SKILLS</a></li>
-            <li><a href="#">PROJECTS</a></li>
-            <li><a href="#">ABOUT</a></li>
-        </ul>
-        <button class="hire-btn">Hire me</button>
-    </div>
+    <nav id="desktop-nav">
+        <div class="navbar">
+            <h2 class="logo">H.Y</h2>
+            <ul>
+                <li><a href="#bio">BIO</a></li>
+                <li><a href="#experiences">EXPERIENCES</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+            <button class="hire-btn">Hire me</button>
+        </div>
+    </nav>
+    
+    <nav id="hamburger-nav">
+        <h2 class="logo">H.Y</h2>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <ul>
+                    <li><a href="#bio" onclick="toggleMenu()">BIO</a></li>
+                    <li><a href="#experiences"onclick="toggleMenu()">EXPERIENCES</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">PROJECTS</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <div class="main">
         <h4><span>CLOUD * INFRASTRUCTURE * IDENTITY</span></h4>
@@ -29,9 +51,8 @@
                 <A href="#"><i class='bx bxl-github'></i></A>
                 <A href="#"><i class='bx bxl-linkedin' ></i></A>
             </div>
-
         </div>
     </div>
-    
+    <script src="script.js"></script>
 </body>
 </html>
