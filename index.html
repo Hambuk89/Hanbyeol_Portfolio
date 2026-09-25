@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
     <title>Han's Portfolio</title>
 </head>
 <body>
@@ -20,7 +21,7 @@
                 <li><a href="#projects">PROJECTS</a></li>
                 <li><a href="#contact">CONTACT</a></li>
             </ul>
-            <button class="hire-btn">HIRE ME</button>
+            <button class="hire-btn" onclick="location.href='#contact'">HIRE ME</button>
         </div>
     </nav>
     <nav id="hamburger-nav">
@@ -46,13 +47,13 @@
     <!-- HERO SECTION -->
     <div class="main" id="home">
         <h4>CLOUD * INFRASTRUCTURE * IDENTITY</h4>
-        <p class="title">Aspiring Cloud Engineer</p>
-        <p class="subtitle">Building practical solutions with Azure, AWS, Microsoft 365 and modern infrastructure technologies.</p>
+        <p class="hero-title">Aspiring Cloud Engineer</p>
+        <p class="hero-subtitle">Building practical solutions with Azure, AWS, Microsoft 365 and modern infrastructure technologies.</p>
         <div class="CV-btn">
-            <a href="#" class="btn">DOWNLOAD CV</a>
+            <a href="./documents/HAN YOO CV updated.pdf" class="btn" download>DOWNLOAD CV</a>
             <div class="sns-logo">
-                <A href="#"><i class='bx bxl-github'></i></A>
-                <A href="#"><i class='bx bxl-linkedin' ></i></A>
+                <A href="https://github.com/Hambuk89" target="_blank" rel="noopener noreferrer"><i class='bx bxl-github'></i></A>
+                <A href="https://www.linkedin.com/in/han-yoo-9955b640b" target="_blank" rel="noopener noreferrer"><i class='bx bxl-linkedin' ></i></A>
             </div>
         </div>
     </div>
@@ -60,8 +61,8 @@
     <!-- ABOUT SECTION -->
     <section id="about">
         <div class="about-header">
-            <p class="about-title">ABOUT ME</p>
-            <h2>My Journey Into Technology</h2>
+            <h class="page-title">ABOUT ME</h>
+            <p class="page-subtitle">MY JOURNEY INTO TECHNOLOGY</p>
         </div>
         <div class="about-content">
             <div class="section_pic-container">
@@ -94,8 +95,8 @@
     <!-- SKILLS & TECHNOLOGIES SECTION -->
     <section id="skill">
         <div class="skill-header">
-            <p class="skill-title">SKILLS & TECHNOLOGIES</p>
-            <h1 class="skill-subtitle">TECHNOLOGIES LEARNING & USING</h1>   
+            <h class="page-title">SKILLS & TECHNOLOGIES</h>
+            <p class="page-subtitle">TECHNOLOGIES LEARNING & USING</p>   
         </div>
 
         <div class="skill-container">
@@ -199,8 +200,8 @@
 
     <section id="projects">
         <div class="projects-header">
-            <p class="projects-title">PROJECTS</p>
-            <h1 class="projects-subtitle">Real-world projects across cloud, web, desktop and software development</h1>
+            <h class="page-title">PROJECTS</h>
+            <p class="page-subtitle">Real-world projects across cloud, web, desktop and software development</p>
             <div class="projects-container">
                 <!-- ContactHub -->
                 <div class="project-card screenshot">
@@ -219,7 +220,7 @@
                             <span>PostgreSQL</span>    
                         </div>
                         <div class="project-links">
-                            <A href="#" class="github-btn"><i class='bx bxl-github'></i><span>GitHub</span></A>
+                            <A href="https://github.com/Hambuk89/ContactHub_Prototype_Flask" target="_blank" rel="noopener noreferrer" class="github-btn"><i class='bx bxl-github'></i><span>GitHub</span></A>
                         </div>
                     </div>
                 </div>
@@ -239,7 +240,7 @@
                             <span>Authentication</span>    
                         </div>
                         <div class="project-links">
-                            <A href="#" class="github-btn"><i class='bx bxl-github'></i><span>GitHub</span></A>
+                            <A href="https://github.com/Hambuk89/TalentHub-Cpp-OOP" target="_blank" rel="noopener noreferrer" class="github-btn"><i class='bx bxl-github'></i><span>GitHub</span></A>
                         </div>
                     </div>
                 </div>
@@ -259,7 +260,7 @@
                             <span>SQLite</span>   
                         </div>
                         <div class="project-links">
-                            <A href="#" class="github-btn"><i class='bx bxl-github'></i><span>GitHub</span></A>
+                            <A href="https://github.com/Hambuk89/mental_health_support_app-Flask" target="_blank" rel="noopener noreferrer" class="github-btn"><i class='bx bxl-github'></i><span>GitHub</span></A>
                         </div>
                     </div>
                 </div>
@@ -277,7 +278,7 @@
                             <span>Figma</span>    
                         </div>
                         <div class="project-links">
-                            <A href="#" class="github-btn"><i class='bx bxl-github'></i><span>GitHub</span></A>
+                            <A href="https://github.com/Hambuk89/Zenfit-Studio" target="_blank" rel="noopener noreferrer" class="github-btn"><i class='bx bxl-github'></i><span>GitHub</span></A>
                         </div>
                     </div>
                 </div>
@@ -298,7 +299,7 @@
                             <span>OOP</span>    
                         </div>
                         <div class="project-links">
-                            <A href="#" class="github-btn"><i class='bx bxl-github'></i><span>GitHub</span></A>
+                            <A href="https://github.com/Hambuk89/VisitorManagement_OnewheroBay-C-WPF" target="_blank" rel="noopener noreferrer" class="github-btn"><i class='bx bxl-github'></i><span>GitHub</span></A>
                         </div>
                     </div>
                 </div>
@@ -317,13 +318,62 @@
                             <span>Figma</span>  
                         </div>
                         <div class="project-links">
-                            <A href="#" class="github-btn"><i class='bx bxl-github'></i><span>GitHub</span></A>
+                            <A href="https://github.com/Hambuk89/Hanbyeol_Portfolio" target="_blank" rel="noopener noreferrer" class="github-btn"><i class='bx bxl-github'></i><span>GitHub</span></A>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="contact-header">
+            <h class="page-title">CONTACT</h>
+            <p class="page-subtitle">LET'S CONNECT! GET IN TOUCH NOW!</p>
+
+            <p class="contact-description">
+                Open to opportunities in IT industry. Let's connect and build something great together.
+            </p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info-container">
+                <A href="mailto:poxsstar@gmail.com" target="_blank" rel="noopener noreferrer"><i class='bx bxl-gmail'></i><span>Email Me</span></A>
+            </div>
+            <div class="contact-info-container">
+                <A href="https://www.linkedin.com/in/han-yoo-9955b640b" target="_blank" rel="noopener noreferrer"><i class='bx bxl-linkedin' ></i><span>LinkedIn</span></A>
+            </div>
+            <div class="contact-info-container">
+                <A href="https://github.com/Hambuk89" target="_blank" rel="noopener noreferrer"><i class='bx bxl-github' ></i><span>GitHub</span></A>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer>
+            <nav>
+                <div class="nav-links-container">
+                    <ul>
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#skill">SKILLS & TECHNOLOGIES</a></li>
+                        <li><a href="#projects">PROJECTS</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <p>Copyright &#169; 2026 Han Yoo. All rights Reserved.</p>
+        </footer> 
+    </section>
+
     <script src="script.js"></script>
-</body>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            easing: "ease-in-out",
+            once: true,
+            offset: 100
+        });
+    </script>
+    </body>
 </html>
