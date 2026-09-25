@@ -9,10 +9,12 @@
     <title>Han's Portfolio</title>
 </head>
 <body>
+    <!-- DESKTOP & HAMBURGER MENU -->
     <nav id="desktop-nav">
         <div class="navbar">
             <h2 class="logo">H.Y</h2>
             <ul>
+                <li><a href="#home">HOME</a></li>
                 <li><a href="#about">ABOUT</a></li>
                 <li><a href="#skill">SKILLS & TECHNOLOGIES</a></li>
                 <li><a href="#projects">PROJECTS</a></li>
@@ -21,7 +23,6 @@
             <button class="hire-btn">HIRE ME</button>
         </div>
     </nav>
-    
     <nav id="hamburger-nav">
         <h2 class="logo">H.Y</h2>
         <div class="hamburger-menu">
@@ -32,8 +33,9 @@
             </div>
             <div class="menu-links">
                 <ul>
+                    <li><a href="#home" onclick="toggleMenu()">HOME</a></li>
                     <li><a href="#about" onclick="toggleMenu()">ABOUT</a></li>
-                    <li><a href="#skill"onclick="toggleMenu()">SKILLS & TECHNOLOGIES</a></li>
+                    <li><a href="#skill" onclick="toggleMenu()">SKILLS & TECHNOLOGIES</a></li>
                     <li><a href="#projects" onclick="toggleMenu()">PROJECTS</a></li>
                     <li><a href="#contact" onclick="toggleMenu()">CONTACT</a></li>
                 </ul>
@@ -41,7 +43,8 @@
         </div>
     </nav>
 
-    <div class="main">
+    <!-- HERO SECTION -->
+    <div class="main" id="home">
         <h4>CLOUD * INFRASTRUCTURE * IDENTITY</h4>
         <p class="title">Aspiring Cloud Engineer</p>
         <p class="subtitle">Building practical solutions with Azure, AWS, Microsoft 365 and modern infrastructure technologies.</p>
@@ -53,7 +56,8 @@
             </div>
         </div>
     </div>
-
+    
+    <!-- ABOUT SECTION -->
     <section id="about">
         <div class="about-header">
             <p class="about-title">ABOUT ME</p>
@@ -87,6 +91,7 @@
         </div>
     </section>
 
+    <!-- SKILLS & TECHNOLOGIES SECTION -->
     <section id="skill">
         <div class="skill-header">
             <p class="skill-title">SKILLS & TECHNOLOGIES</p>
@@ -134,6 +139,7 @@
                     <span>Flask</span>
                     <span>C++</span>
                     <span>C#</span>
+                    <span>Figma</span>
                 </div>
             </div>
 
@@ -185,6 +191,134 @@
                     </div>
                     <div class="cert-item">
                         <i class='bx bxl-microsoft'></i><span>Microsoft Azure Fundamentals (AZ-900)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="projects-header">
+            <p class="projects-title">PROJECTS</p>
+            <h1 class="projects-subtitle">Real-world projects across cloud, web, desktop and software development</h1>
+            <div class="projects-container">
+                <!-- ContactHub -->
+                <div class="project-card screenshot">
+                    <div class="project-image"><img src="./images/ContactHub.jpg"></div>
+                    <div class="project-content">
+                        <span class="project-category">WEB APPLICATION & CLOUD DEPLOYMENT</span>
+                        <h2>ContactHub</h2>
+                        <p>A cloud-hosted contact management platform built with Flask, featuring user authentication, database integration and responsive web design.</p>
+
+                        <div class="project-tags">
+                            <span>Flask</span>
+                            <span>Python</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaSCript</span>
+                            <span>PostgreSQL</span>    
+                        </div>
+                        <div class="project-links">
+                            <A href="#" class="github-btn"><i class='bx bxl-github'></i><span>GitHub</span></A>
+                        </div>
+                    </div>
+                </div>
+                <!-- TalentHub Online -->
+                <div class="project-card screenshot">
+                    <div class="project-image"><img src="./images/TalentHub.jpg"></div>
+                    <div class="project-content">
+                        <span class="project-category">C++ TEAM PROJECT</span>
+                        <h2>TalentHub Oline</h2>
+                        <p>Student and course management system featuring secure login, password validation, enrollment management and admin controls.</p>
+
+                        <div class="project-tags">
+                            <span>C++</span>
+                            <span>OOP</span>
+                            <span>ConsoleAPP</span>
+                            <span>File Handling</span>
+                            <span>Authentication</span>    
+                        </div>
+                        <div class="project-links">
+                            <A href="#" class="github-btn"><i class='bx bxl-github'></i><span>GitHub</span></A>
+                        </div>
+                    </div>
+                </div>
+                <!-- Mental Health Support App -->
+                <div class="project-card screenshot">
+                    <div class="project-image"><img src="./images/Wellbeing Space.jpg"></div>
+                    <div class="project-content">
+                        <span class="project-category">FLASK WEB APPLICATION</span>
+                        <h2>Wellbeing Space</h2>
+                        <p>A Flask-based support application providing mental health resources and interactive user features</p>
+
+                        <div class="project-tags">
+                            <span>Flask</span>
+                            <span>Python</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>SQLite</span>   
+                        </div>
+                        <div class="project-links">
+                            <A href="#" class="github-btn"><i class='bx bxl-github'></i><span>GitHub</span></A>
+                        </div>
+                    </div>
+                </div>
+                <!-- ZenFit Studio Website -->
+                <div class="project-card screenshot">
+                    <div class="project-image"><img src="./images/ZenFit.jpeg"></div>
+                    <div class="project-content">
+                        <span class="project-category">FRONT-END WEBSITE</span>
+                        <h2>ZenFit Studio</h2>
+                        <p>First project in learning front-end a simple desktop-version website front-end focused on user experience, modern layouts and clean design</p>
+
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Figma</span>    
+                        </div>
+                        <div class="project-links">
+                            <A href="#" class="github-btn"><i class='bx bxl-github'></i><span>GitHub</span></A>
+                        </div>
+                    </div>
+                </div>
+                <!-- Visitor Management System -->
+                <div class="project-card screenshot">
+                    <div class="project-image"><img src="./images/VisitorManagementSystem.png"></div>
+                    <div class="project-content">
+                        <span class="project-category">C# WPF DESKTOP APPLICATION</span>
+                        <h2>Visitor Management System</h2>
+                        <p>A C#.ASP.NET WPF desktop application with authentication, booking management, visitor tracking and SQL integration.</p>
+
+                        <div class="project-tags">
+                            <span>C#</span>
+                            <span>.NET</span>
+                            <span>XAML</span>
+                            <span>MySQL</span>
+                            <span>BCrypt.NET</span>
+                            <span>OOP</span>    
+                        </div>
+                        <div class="project-links">
+                            <A href="#" class="github-btn"><i class='bx bxl-github'></i><span>GitHub</span></A>
+                        </div>
+                    </div>
+                </div>
+                <!-- My Portfolio Website -->
+                <div class="project-card screenshot">
+                    <div class="project-image"><img src="./images/MyPortfolio.jpg"></div>
+                    <div class="project-content">
+                        <span class="project-category">PERSONAL PORTFOLIO</span>
+                        <h2>My Portfolio Website</h2>
+                        <p>Personal portfolio showcasing bio, skills, projects and contact, showing career transition into IT</p>
+
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Figma</span>  
+                        </div>
+                        <div class="project-links">
+                            <A href="#" class="github-btn"><i class='bx bxl-github'></i><span>GitHub</span></A>
+                        </div>
                     </div>
                 </div>
             </div>
